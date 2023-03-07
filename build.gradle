@@ -1,0 +1,33 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'java'
+}
+
+group 'me.dkz.plugin.artemis.ArtemisNexus'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io/' }
+    maven {
+        url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
+    }
+}
+shadowJar {
+    destinationDirectory = file("C:\\Users\\troll\\OneDrive\\Área de Trabalho\\Spigot\\plugins")
+}
+
+// utf-8 support
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+    compileOnly(files("C:\\Users\\troll\\OneDrive\\Área de Trabalho\\Spigot\\spigot.jar"));
+    compileOnly 'me.clip:placeholderapi:2.11.2'
+    implementation 'com.github.HenryFabio:inventory-api:2.0.3'
+
+}
+

@@ -1,0 +1,17 @@
+name: ArtemisNexus
+version: 2.0.0
+main: me.dkz.plugin.artemis.artemisnexus.Main
+author: Drakiz
+commands:
+  clan:
+    aliases: ["cla", "f"]
+    description: "Comando para gerenciar seu clan"
+  energia:
+    aliases: ["energy", "e"]
+    description: "Comando para gerenciar sua energia"
+  c:
+    aliases: ["chat", "ch"]
+    description: "Comando para comunicar-se com o clan"
+  artemisnexus:
+    aliases: ["an", "artemis"]
+    description: "Comando para gerenciar o plugin"
